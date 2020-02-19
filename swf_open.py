@@ -4,7 +4,7 @@ import time
 import webbrowser
 from PyQt5.QtWidgets import QApplication, QWidget, QDesktopWidget, QMessageBox
 from PyQt5.QtGui import QIcon
-from PyQt5 import QtWidgets, QtGui
+from PyQt5 import QtWidgets, QtGui, QtCore
 from PyQt5.QtWidgets import QFileDialog
 
 
@@ -14,8 +14,8 @@ class SWFOPEN(QWidget):
         self.initUI()
 
     def initUI(self):
-        #设置窗口大小
-        self.resize(800, 120)
+        #设置固定窗口大小
+        self.setFixedSize(800, 120)
         #调用自定义方法使窗口显示在屏幕中央
         self.center()
 
